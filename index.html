@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/cursor.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <title>Document</title>
+    <style>
+        .TextBox {
+            animation: TexBox 1s linear infinite;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scroll) * -10s);
+
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+        }
+
+        .ProfileBox {
+            animation: ProBox 1s linear infinite;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scroll) * -3s);
+
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+        }
+        .SkillBox {
+            animation: SkiBox 4s linear infinite;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scroll) * -3s);
+
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+        }
+        .PortfolioBox {
+            animation: PortBox 4s linear infinite;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scroll) * -3s);
+
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+        }
+
+        @keyframes TexBox {
+
+            /* from {
+                opacity: 1;
+            } */
+            to {
+                /* transform: scale(2.5, 1); */
+                opacity: 0;
+            }
+        }
+
+        @keyframes ProBox {
+            0% {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 1;
+            }
+
+            60% {
+                opacity: 1;
+            }
+
+            100% {
+                /* transform: scale(2.5, 1); */
+                opacity: 0;
+            }
+        }
+        @keyframes SkiBox {
+            0% {
+                opacity: 0;
+                left: 0%;
+            }
+            30% {
+                opacity: 0;
+                left: 0%;
+            }
+            50% {
+                opacity: 1;
+                left: 50%;
+            }
+            60% {
+                opacity: 1;
+                left: 50%;
+            }
+            70% {
+                opacity: 0;
+                left: 100%;
+            }
+            100% {
+                opacity: 0;
+                left: 100%;
+            }
+        }
+        @keyframes PortBox {
+            0% {
+                opacity: 0;
+                left: 100%;
+            }
+            60% {
+                opacity: 0;
+                left: 100%;
+            }
+            70% {
+                opacity: 1;
+                left: 50%;
+            }
+            80% {
+                opacity: 1;
+                left: 50%;
+            }
+            90% {
+                opacity: 0;
+                left: 0%;
+            }
+            100% {
+                opacity: 0;
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <header class="header">
+        <div class="left-side">
+            <a href="#" class="head-a" id="page">YOO HYNO</a>
+        </div>
+        <div class="right-side">
+            <ul class="head-m">
+                <li><a href="#PROFILE" class="head-a" id="page">PROFILE</a></li>
+                <li><a href="#SKILL" class="head-a" id="page">SKILL</a></li>
+                <li><a href="#PORTFOLIO" class="head-a" id="page">PORTFOLIO</a></li>
+                <li><a href="#CONTACT" class="head-a" id="page">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="div div2"><!--YooHyno-->
+            <div class="TextBox">
+                <div class="BoxTitle">
+                    <!-- <img src="image/hyno.png" class="HynoImg" alt="YooHyno's logo"> -->
+                    <lottie-player src="hyno.json" class="lotti" speed="1" loop autoplay></lottie-player>
+                    <p style="font-size: 15px;">Imagine Pioneer</p>
+                    <p style="font-size: 25px;">유현호 입니다</p>
+                </div>
+            </div>
+        </div>
+        <div class="div div2" id="PROFILE"><!--PROFILE-->
+            <div class="ProfileBox">
+                <div class="Section1">
+                    <div class="DivTitle">
+                        <h1 class="typ">PROFILE</h1>
+                    </div>
+                    <img src="image/profile_img2.jpg" class="ProImg" alt="YooHyno's Image">
+                    <div class="ProfileText">
+                        <p>
+                            <span>NAME</span>
+                            <span>|</span>
+                            <span class="typ1">유현호</span>
+                        </p>
+                        <p>
+                            <span>BIRTH</span>
+                            <span>|</span>
+                            <span class="typ2">2000.10.10</span>
+                        </p>
+                        <p>
+                            <span>UNIVERSITY</span>
+                            <span>|</span>
+                            <span class="typ3">동양미래대학 컴퓨터공학부 컴퓨터정보공학과 (졸업)</span>
+                        </p>
+                        <p>
+                            <span>MILITARY</span>
+                            <span>|</span>
+                            <span class="typ4">대한민국 육군 병장 만기전역</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div div2"></div><!--장면 전환-->
+        <div class="div div2"></div><!--장면 전환-->
+        <div class="div div2" id="SKILL"><!--SKILL-->
+            <div class="SkillBox">
+                <div class="DivTitle">
+                    <h1>SKILL</h1>
+                </div>
+                <div class="SkillStat">
+
+                </div>
+            </div>
+        </div>
+        <div class="div div2" id="PORTFOLIO"><!--PORTFOLIO-->
+            <div class="PortfolioBox">
+                <div class="DivTitle">
+                    <h1>PORTFOLIO</h1>
+                </div>
+                <div class="PortList">
+
+                </div>
+            </div>
+            <div class="btn1">
+            </div>
+            <div class="btn2">
+            </div>
+            <div class="btn3">
+            </div>
+        </div>
+    </div>
+    <footer class="footer" id="CONTACT">
+        <div class="foot">
+            <span>© 2023 YOO HYNO</span>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener(
+            "scroll",
+            () => {
+                document.body.style.setProperty(
+                    "--scroll",
+                    window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+                );
+            },
+            false
+        );
+    </script>
+    <script>
+        let mouseCursor = document.querySelector(".cursor");
+        window.addEventListener("scroll", cursor);
+        window.addEventListener("mousemove", cursor);
+        function cursor(e) {
+            mouseCursor.style.left = e.pageX + "px";
+            mouseCursor.style.top = e.pageY - scrollY + "px";
+        }
+    </script>
+</body>
+
+</html>
